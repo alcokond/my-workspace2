@@ -1,0 +1,20 @@
+<div class="range-slider">
+  <input
+    #rangeInput
+    type="range"
+    [min]="minValue"
+    [max]="maxValue"
+    [value]="selectedValue"
+    (input)="onInputChange($event)"
+    (mousedown)="showValueBubble()"
+    (touchstart)="showValueBubble()"
+    [style.background]="
+      'linear-gradient(to right, #83378F 0%, #83378F ' +
+      getPercentage() +
+      '%, #ddd ' +
+      getPercentage() +
+      '%, #ddd 100%)'
+    "
+  />
+  <div class="range-slider-value" #valueBubble>{{ selectedValue }}</div>
+</div>
