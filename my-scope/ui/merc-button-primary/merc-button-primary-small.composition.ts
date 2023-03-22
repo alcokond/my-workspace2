@@ -8,4 +8,4 @@ import { MercButtonPrimaryModule } from './merc-button-primary.module';
   template: `<merc-button-primary>
   </merc-button-primary>`
 })
-export class MercButtonPrimaryCompositionComponent {}
+export class MercButtonPrimarySmallCompositionComponent {}

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'merc-button-primary',
+  selector: 'merc-button-subtle',
   template: `
     <button [ngStyle]="getStyles()" [disabled]="disabled">
       <!-- <ng-container *ngIf="iconLeft">
@@ -13,17 +13,15 @@ import { Component, Input } from '@angular/core';
       </ng-container> -->
     </button>
   `,
-  styleUrls: ['./merc-button-primary.component.scss'],
+  styleUrls: ['./merc-button-subtle.component.scss'],
 })
-export class MercButtonPrimaryComponent {
+export class MercButtonSubtleComponent {
   @Input() label: string = 'Button';
   @Input() iconLeft: string | null = null;
   @Input() iconRight: string | null = null;
   @Input() size: 'small' | 'medium' | 'large' = 'small';
   @Input() disabled: boolean = false;
 
-  
-  
   getStyles() {
     const styles = {
       'min-width': '145px',
@@ -31,13 +29,11 @@ export class MercButtonPrimaryComponent {
       'font-size': '14px',
       'line-height': '17px'
     };
-    
     if (this.size === 'medium') {
       styles['min-width'] = '158px';
       styles['min-height'] = '48px';
       styles['font-size'] = '16px';
       styles['line-height'] = '20px';
-
     } else if (this.size === 'large') {
       styles['min-width'] = '249px';
       styles['min-height'] = '64px';

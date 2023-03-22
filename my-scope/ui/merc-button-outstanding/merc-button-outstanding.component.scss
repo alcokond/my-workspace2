@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,600,700,800,900");
 button {
-  color: #FFFFFF;
+  color: #fff;
   border:0;
   padding: 8px 16px;
   position: relative;
@@ -12,14 +10,18 @@ button {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  background: linear-gradient(0deg, #773282 0%, #9D2685 100%);
-  box-shadow: 0px 0px 10px rgba(131, 55, 143, 0.4);
+  min-width: 145px;
+  min-height: 32px;
+  background: linear-gradient(90deg, #AF3BB1 0%, #FFD933 100%);
+  box-shadow: 0px 0px 0px ;
   border-radius: 8px;
   font-family: 'Ubuntu';
-  font-weight: 500;
+  font-style: normal;
+  font-weight: var( --semibold);
   font-size: 14px;
   line-height: 17px;
   text-align: center;
+
 }
 
 button::before {
@@ -29,7 +31,7 @@ button::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #5D2766;
+  background: #221987;
   z-index: -1;
   transition: opacity 0.5s linear;
   opacity: 0;
@@ -40,9 +42,9 @@ button:hover::before {
 
 button:disabled{
   pointer-events: none;
-  color: #FFFFFF;
+  color: #fff;
   border:0;
-  padding: 8px 24px;
+  padding: 8px 16px;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -53,15 +55,14 @@ button:disabled{
   gap: 16px;
   min-width: 145px;
   min-height: 32px;
-  background: #E5D0F6;
+  background: #F2F1FC;
   box-shadow: 0px 0px 0px;
   border-radius: 8px;
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: 500;
+  font-weight: var( --semibold);
   font-size: 14px;
   line-height: 17px;
   text-align: center;
   
 }
-

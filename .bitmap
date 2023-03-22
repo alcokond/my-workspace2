@@ -35,6 +35,18 @@
             }
         }
     },
+    "ui/merc-button-outstanding": {
+        "scope": "",
+        "version": "",
+        "mainFile": "public-api.ts",
+        "rootDir": "my-scope/ui/merc-button-outstanding",
+        "config": {
+            "my-org.my-scope/envs/my-angular-env": {},
+            "teambit.envs/envs": {
+                "env": "my-org.my-scope/envs/my-angular-env"
+            }
+        }
+    },
     "ui/merc-button-primary": {
         "scope": "",
         "version": "",
@@ -52,6 +64,33 @@
         "version": "",
         "mainFile": "public-api.ts",
         "rootDir": "my-scope/ui/merc-button-sec",
+        "config": {
+            "my-org.my-scope/envs/my-angular-env": {},
+            "teambit.envs/envs": {
+                "env": "my-org.my-scope/envs/my-angular-env"
+            },
+            "teambit.component/deprecation": {
+                "deprecate": true
+            }
+        }
+    },
+    "ui/merc-button-secondary": {
+        "scope": "",
+        "version": "",
+        "mainFile": "public-api.ts",
+        "rootDir": "my-scope/ui/merc-button-secondary",
+        "config": {
+            "my-org.my-scope/envs/my-angular-env": {},
+            "teambit.envs/envs": {
+                "env": "my-org.my-scope/envs/my-angular-env"
+            }
+        }
+    },
+    "ui/merc-button-subtle": {
+        "scope": "",
+        "version": "",
+        "mainFile": "public-api.ts",
+        "rootDir": "my-scope/ui/merc-button-subtle",
         "config": {
             "my-org.my-scope/envs/my-angular-env": {},
             "teambit.envs/envs": {

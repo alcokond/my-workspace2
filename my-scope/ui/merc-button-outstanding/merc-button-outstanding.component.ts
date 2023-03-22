@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'merc-button-primary',
+  selector: 'merc-button-outstanding',
   template: `
     <button [ngStyle]="getStyles()" [disabled]="disabled">
       <!-- <ng-container *ngIf="iconLeft">
@@ -13,9 +13,9 @@ import { Component, Input } from '@angular/core';
       </ng-container> -->
     </button>
   `,
-  styleUrls: ['./merc-button-primary.component.scss'],
+  styleUrls: ['./merc-button-outstanding.component.scss'],
 })
-export class MercButtonPrimaryComponent {
+export class MercButtonOutstandingComponent {
   @Input() label: string = 'Button';
   @Input() iconLeft: string | null = null;
   @Input() iconRight: string | null = null;
@@ -47,3 +47,4 @@ export class MercButtonPrimaryComponent {
     return styles;
   }
 }
+
