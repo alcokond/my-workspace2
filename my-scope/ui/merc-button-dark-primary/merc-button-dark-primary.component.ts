@@ -1,11 +1,21 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'merc-button-primary',
-  templateUrl: './merc-button-primary.component.html',
-  styleUrls: ['./merc-button-primary.component.scss'],
+  selector: 'merc-button-dark-primary',
+  template: `
+    <button [ngStyle]="getStyles()" [disabled]="disabled">
+      <!-- <ng-container *ngIf="iconLeft">
+        
+      </ng-container> -->
+      {{ label }}
+      <!-- <ng-container *ngIf="iconRight">
+        
+      </ng-container> -->
+    </button>
+  `,
+  styleUrls: ['./merc-button-dark-primary.component.scss'],
 })
-export class MercButtonPrimaryComponent {
+export class MercButtonDarkPrimaryComponent {
   @Input() label: string = 'Button';
   @Input() iconLeft: string | null = null;
   @Input() iconRight: string | null = null;
@@ -37,3 +47,4 @@ export class MercButtonPrimaryComponent {
     return styles;
   }
 }
+

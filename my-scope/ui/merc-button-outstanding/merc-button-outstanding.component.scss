@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500,600,700,800,900");
 button {
   color: #fff;
   border:0;
@@ -10,16 +11,12 @@ button {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  min-width: 145px;
-  min-height: 32px;
   background: linear-gradient(90deg, #AF3BB1 0%, #FFD933 100%);
   box-shadow: 0px 0px 0px ;
   border-radius: 8px;
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: var( --semibold);
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 600;
   text-align: center;
 
 }
@@ -31,7 +28,7 @@ button::before {
   right: 0;
   bottom: 0;
   left: 0;
-  background: #221987;
+  background: #562577;
   z-index: -1;
   transition: opacity 0.5s linear;
   opacity: 0;
@@ -53,16 +50,12 @@ button:disabled{
   justify-content: center;
   align-items: center;
   gap: 16px;
-  min-width: 145px;
-  min-height: 32px;
-  background: #F2F1FC;
+  background: #E5D0F6;
   box-shadow: 0px 0px 0px;
   border-radius: 8px;
   font-family: 'Ubuntu';
   font-style: normal;
-  font-weight: var( --semibold);
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 600;
   text-align: center;
   
 }

@@ -35,6 +35,18 @@
             }
         }
     },
+    "ui/merc-button-dark-primary": {
+        "scope": "",
+        "version": "",
+        "mainFile": "public-api.ts",
+        "rootDir": "my-scope/ui/merc-button-dark-primary",
+        "config": {
+            "my-org.my-scope/envs/my-angular-env": {},
+            "teambit.envs/envs": {
+                "env": "my-org.my-scope/envs/my-angular-env"
+            }
+        }
+    },
     "ui/merc-button-outstanding": {
         "scope": "",
         "version": "",
@@ -44,6 +56,9 @@
             "my-org.my-scope/envs/my-angular-env": {},
             "teambit.envs/envs": {
                 "env": "my-org.my-scope/envs/my-angular-env"
+            },
+            "teambit.component/deprecation": {
+                "deprecate": true
             }
         }
     },

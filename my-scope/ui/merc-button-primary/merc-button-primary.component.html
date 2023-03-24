@@ -1,0 +1,12 @@
+<head>
+  <script src="https://kit.fontawesome.com/c2c6803cc4.js" crossorigin="anonymous"></script>
+</head>
+<button [ngStyle]="getStyles()" [disabled]="disabled">
+  <ng-container *ngIf="iconLeft">
+    
+  </ng-container>
+  {{ label }}
+  <ng-container *ngIf="iconRight">
+    
+  </ng-container>
+</button>
